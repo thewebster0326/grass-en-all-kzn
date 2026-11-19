@@ -136,7 +136,7 @@
       const message = area > 0
         ? `Hi GRASS EN ALL, my lawn is ${lengthValue} m × ${widthValue} m (approximately ${area.toFixed(1)} m²). Please help me with a turf quote.`
         : 'Hi GRASS EN ALL, please help me with an instant turf quote.';
-      whatsapp.href = `https://wa.me/27833218052?text=${encodeURIComponent(message)}`;
+      whatsapp.href = `https://wa.me/27645470866?text=${encodeURIComponent(message)}`;
     };
 
     length.addEventListener('input', calculate);
@@ -160,7 +160,7 @@
       `Approximate area: ${data.get('area') || 'Not specified'}`,
       `Message: ${data.get('message') || 'No additional message'}`
     ];
-    const url = `https://wa.me/27833218052?text=${encodeURIComponent(lines.join('\n'))}`;
+    const url = `https://wa.me/27645470866?text=${encodeURIComponent(lines.join('\n'))}`;
     const status = document.querySelector('#form-status');
     if (status) status.textContent = 'Opening WhatsApp with your quote details…';
     window.open(url, '_blank', 'noopener,noreferrer');
